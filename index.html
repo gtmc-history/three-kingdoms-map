@@ -1004,7 +1004,7 @@
             ctx.globalCompositeOperation = 'source-over';
             ctx.drawImage(imgBase, 0, 0, canvas.width, canvas.height);
 
-            drawHanRiverLabel();
+            //drawHanRiverLabel();
 
             ctx.globalAlpha = 0.5;
             ctx.globalCompositeOperation = 'multiply';
@@ -1017,6 +1017,7 @@
             ctx.globalAlpha = 1.0;
 
             if (layers['4c'] && layers['5c'] && layers['6c']) {
+                drawHanRiverLabel();
                 drawOverlapHighlight();
             }
         }
@@ -1264,3 +1265,4 @@
 </body>
 
 </html>
+
